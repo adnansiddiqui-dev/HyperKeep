@@ -26,9 +26,9 @@
 
 <div align="center">
 
-<a href="https://github.com/adnansiddiqui-dev/HyperKeep/raw/main/assets/hyperkeep-promo.mp4"><img src="assets/promo-poster.jpg" width="760" alt="Watch the HyperKeep video: why your messages arrive late on the China ROM, and how HyperKeep fixes it"></a>
+<a href="https://hyperkeep.vercel.app/media/hyperkeep-promo.mp4"><img src="assets/promo-poster.jpg" width="760" alt="Watch the HyperKeep video: why your messages arrive late on the China ROM, and how HyperKeep fixes it"></a>
 
-<sub><b>▶ <a href="https://github.com/adnansiddiqui-dev/HyperKeep/raw/main/assets/hyperkeep-promo.mp4">Watch the video</a></b>: why your messages arrive late on the China ROM, and how HyperKeep fixes it (51 seconds, with captions).<br>
+<sub><b>▶ <a href="https://hyperkeep.vercel.app/media/hyperkeep-promo.mp4">Watch the video</a></b>: why your messages arrive late on the China ROM, and how HyperKeep fixes it (51 seconds, with captions).<br>
 Ready to set up? <a href="#set-up-in-one-minute">Watch the setup</a>.</sub>
 
 </div>
