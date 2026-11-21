@@ -7,7 +7,7 @@
 <p align="center">
   <b>Get your Xiaomi notifications on time.</b><br>
   For Xiaomi, Redmi and POCO phones on the <b>China ROM</b> of HyperOS.<br>
-  Keeps WhatsApp, Messenger, Gmail and your other apps delivering on time, with nearly zero battery.
+  Keeps WhatsApp, Messenger, Gmail and your other apps delivering on time, with nearly zero battery drain.
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@ It also tells you exactly what to tap when something gets in the way: an app's *
 off, an app is set to **No restrictions**, or an app is **locked in Recents**. Xiaomi only lets you
 change those yourself, so HyperKeep opens the right page.
 
-## Nearly zero battery
+## Nearly zero battery drain
 
 Measured on a real China ROM phone with HyperOS 4:
 
@@ -186,5 +186,5 @@ Made by **Adnan Siddiqui** ·
 
 ---
 
-<sub>HyperKeep is free to use. Its source code is not public. Xiaomi, Redmi, POCO, HyperOS and
+<sub>HyperKeep is free to use. Xiaomi, Redmi, POCO, HyperOS and
 Google Play are trademarks of their owners; HyperKeep is not affiliated with them.</sub>
