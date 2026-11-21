@@ -26,10 +26,10 @@
 
 <div align="center">
 
-https://github.com/user-attachments/assets/77b4b7dc-0c76-474c-b8ba-0e2a33f31f1f
+https://github.com/user-attachments/assets/fe31e7a7-f616-4fe0-b9ea-dd0311ea1b2c
 
-<sub>A real recording of the first-time setup on HyperOS 4, with taps and narration (68 seconds).<br>
-Turn the sound on for the spoken guide. Can't play it here? <a href="assets/hyperkeep-setup.mp4">Open the video file</a>.</sub>
+<sub>Why your messages arrive late on the China ROM, and how HyperKeep fixes it (51 seconds, with captions).<br>
+Can't play it here? <a href="assets/hyperkeep-promo.mp4">Open the video file</a>. Ready to set up? <a href="#set-up-in-one-minute">Watch the setup</a>.</sub>
 
 </div>
 
@@ -95,6 +95,17 @@ HyperKeep works on **HyperOS 1, 2, 3 and 4** with **Android 12 to 17**. Every re
 a real China ROM phone. It isn't built for Global, EEA or India ROMs.
 
 ## Set up in one minute
+
+<div align="center">
+
+https://github.com/user-attachments/assets/77b4b7dc-0c76-474c-b8ba-0e2a33f31f1f
+
+<sub>A real recording of the first-time setup on HyperOS 4, with taps and narration (68 seconds).<br>
+Turn the sound on for the spoken guide. Can't play it here? <a href="assets/hyperkeep-setup.mp4">Open the video file</a>.</sub>
+
+</div>
+
+Or follow these four steps:
 
 1. **Download** the APK from the [website](https://hyperkeep.vercel.app/download) or
    [Releases](https://github.com/adnansiddiqui-dev/HyperKeep/releases/latest) on your phone and open
