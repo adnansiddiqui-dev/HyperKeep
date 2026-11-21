@@ -138,7 +138,7 @@ for nothing. HyperKeep shows a tip if a kept app has either one.
 HyperKeep changes exactly one Xiaomi setting: its list of apps that are never frozen. It keeps every
 entry Xiaomi put there, re-reads the setting after each change, and backs up the original value so
 you can restore it. It has no ads, no analytics and no account, and goes online only to check for its
-own updates. See [Permissions & privacy](docs/PERMISSIONS.md).
+own updates. See [Permissions & privacy](docs/PERMISSIONS.md) and [Safe to install](#safe-to-install).
 </details>
 
 <details>
@@ -171,6 +171,32 @@ release.
 
 More answers on the [website](https://hyperkeep.vercel.app/faq).
 
+## Safe to install
+
+Every release is checked before it's published, and you can check it yourself:
+
+- **Scanned for malware.** Each APK is scanned by [VirusTotal](https://www.virustotal.com)'s
+  antivirus engines; the release notes link to its report.
+- **No trackers.** Each APK is checked against every tracker signature from
+  [εxodus Privacy](https://reports.exodus-privacy.eu.org/en/trackers/). A release with a tracker in it
+  isn't published.
+- **Always the same signing key.** Every release is signed with one key, so only a genuine update can
+  replace an installed HyperKeep. Its certificate's SHA-256 fingerprint:
+
+  ```
+  B5:06:E4:AF:DC:21:32:72:BD:5A:36:BF:CC:AB:F4:86:40:77:40:99:B7:52:31:BA:32:14:73:D6:26:40:AE:28
+  ```
+
+  Compare it with the free, open-source [AppVerifier](https://github.com/soupslurpr/AppVerifier) app,
+  or with `apksigner verify --print-certs HyperKeep-vX.Y.Z.apk` on a computer.
+- **Files that can't be swapped.** From v1.0.2, releases are immutable: once published, an APK can't
+  be replaced. GitHub signs a record of each one; check a download with
+  `gh release verify-asset vX.Y.Z HyperKeep-vX.Y.Z.apk -R adnansiddiqui-dev/HyperKeep`.
+- **Checked updates.** Each release lists its APK's SHA-256, and HyperKeep checks the size, checksum
+  and signature of every update before Android installs it.
+
+HyperKeep is free; see the [license](LICENSE).
+
 ## Feedback
 
 Found a bug, or a phone it doesn't work on? Open an
@@ -186,5 +212,5 @@ Made by **Adnan Siddiqui** ·
 
 ---
 
-<sub>HyperKeep is free to use. Xiaomi, Redmi, POCO, HyperOS and
+<sub>HyperKeep is free to use under its [license](LICENSE). Xiaomi, Redmi, POCO, HyperOS and
 Google Play are trademarks of their owners; HyperKeep is not affiliated with them.</sub>
