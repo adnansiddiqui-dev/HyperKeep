@@ -23,20 +23,18 @@ All numbers are measurements from the Redmi K90 (HyperOS OS4.0.6.0, Android 17) 
 
 | Mode | Window | HyperKeep CPU | Wake locks | Alarms / jobs run | Memory (PSS) | batterystats estimate |
 |---|---|---|---|---|---|---|
-| **Always-on** (foreground service, 1 observer) | 10 min, screen off | **1 ms** (batterystats); 0 ticks in `/proc/<pid>/stat` | none | none | 18.7 MB | 0.000074 mAh |
 | **Smart Guard** (default, no service) | 10 min, screen off, background process (no UI loaded) | **55 ms** (batterystats; 110 ms in `/proc`). All of it was one GC that HyperOS requested on the cached process; HyperKeep code did not run | none | none | 18.7 MB while cached; 0 once the system reclaims it | 0.0056 mAh |
 
 A first Smart Guard run started right after on-screen use measured 135 ms / 0.014 mAh: that was the
 one-time cost of the activity being torn down at screen-off plus two GCs of the cached UI heap,
 not monitoring work, so it was re-run from the real background state (above).
 
-Both modes are effectively free while nothing changes; Smart Guard keeps no service and no
-notification, so it remains the default. Always-on only adds value if HyperOS delays jobs.
+Smart Guard is effectively free while nothing changes, and it keeps no service and no
+notification.
 
 The `--checkin` `pwi` field for HyperKeep read 1.54 mAh, but that field is a since-charged
 aggregate that did not reset and includes ~40 minutes of on-screen UI testing; it is not an idle figure.
 
-Always-on start-up cost: 140 ms CPU, 16.9 MB PSS right after start (Java heap 3.6 MB, code 2.6 MB).
 The debug build is not representative (58 MB PSS, 33 MB of unminified dex).
 
 ### Event cost and latency (PowerKeeper really rebuilding the list)
@@ -45,7 +43,6 @@ The debug build is not representative (58 MB PSS, 33 MB of unminified dex).
 |---|---|---|---|
 | Smart Guard, process cached | 1.53 s | 14.2 ms | 3.4 ms (no-op) |
 | Smart Guard, process killed (cold start) | 1.84 s | 34.2 ms | 4.9 ms (no-op) |
-| Always-on | 0.43 s (incl. 400 ms coalescing) | 29.6 ms | 4.5 ms (no-op) |
 
 Each repair is one `Settings.System` read-compare-write-read cycle plus, if Google Play
 services was re-added, two explicit heartbeat broadcasts. No wake lock is held by HyperKeep; the

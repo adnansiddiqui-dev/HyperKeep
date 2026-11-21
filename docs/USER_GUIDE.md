@@ -67,8 +67,6 @@
 ## Settings
 
 - **Protect in the background**: the main on/off switch.
-- **Instant fixing**: fixes in under a second using a small silent notification. Only needed if
-  notifications are still late.
 - **Start after restart** and **Alerts** (only when an app drops off and can't be put back).
 - **What HyperKeep needs**: the status of each permission; tap a row to open its page.
 - **Appearance**: System, Light or Dark.
@@ -86,8 +84,9 @@
   that needs it.
 - *"<app> uses extra battery"* → tap **Fix** and choose *Battery saver (recommended)* for that
   app.
-- Notifications still late for one app → check that its row says *Flowing* (Autostart on). If
-  it does, try **Instant fixing** in Settings.
+- Notifications still late for one app → check that its row says *Flowing* (Autostart on), and
+  that HyperKeep itself still has Autostart and *No restrictions* (Home shows a card if not). A
+  few messages can still wait during HyperOS's deeper sleep at night; no app can change that.
 
 ## Updating HyperKeep
 

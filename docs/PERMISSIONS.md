@@ -11,9 +11,8 @@ for the user to flip.
 | Access list of installed apps (`com.android.permission.GET_INSTALLED_APPS`) | Recommended | China HyperOS can hide other apps from the app list without it | Permission review / permission editor |
 | Internet (`INTERNET`) | For updates | Asks HyperKeep's GitHub release for the newest version (once a day while the app is open, or when you tap Check) and downloads it when you tap Install. Sends nothing about you or your phone; you can turn automatic checks off | Install-time |
 | Install apps (`REQUEST_INSTALL_PACKAGES`) | For updates | Hands HyperKeep's own update to Android's installer; you confirm every install | Install-time; the installer asks to confirm |
-| Notifications (`POST_NOTIFICATIONS`) | Optional | Alerts when an app couldn't be put back; the Always-on notification | System notification settings |
+| Notifications (`POST_NOTIFICATIONS`) | Optional | Alerts when an app couldn't be put back | System notification settings |
 | `RECEIVE_BOOT_COMPLETED` | Optional | "Start after reboot"; the receiver component is disabled when the option is off | Install-time |
-| `FOREGROUND_SERVICE` | Optional | Only for Always-on mode (off by default) | Install-time |
 
 On Android 17, declaring `INTERNET` also adds `ACCESS_LOCAL_NETWORK` (HyperOS: *Connect to nearby
 devices*). HyperKeep never talks to devices on your network, so leave it off.
