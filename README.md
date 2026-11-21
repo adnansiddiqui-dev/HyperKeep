@@ -26,14 +26,10 @@
 
 <div align="center">
 
-
-
 https://github.com/user-attachments/assets/78070fc5-b3ed-4410-bf57-95514193e204
 
-
-
-<sub><b>▶ <a href="https://hyperkeep.vercel.app/media/hyperkeep-promo.mp4">Watch the video</a></b>: why your messages arrive late on the China ROM, and how HyperKeep fixes it (51 seconds, with captions).<br>
-Ready to set up? <a href="#set-up-in-one-minute">Watch the setup</a>.</sub>
+<sub>Why your messages arrive late on the China ROM, and how HyperKeep fixes it (51 seconds, with captions).<br>
+Can't play it here? <a href="https://hyperkeep.vercel.app/media/hyperkeep-promo.mp4">Open the video</a>. Ready to set up? <a href="#set-up-in-one-minute">Watch the setup</a>.</sub>
 
 </div>
 
