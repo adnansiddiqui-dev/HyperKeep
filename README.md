@@ -26,10 +26,10 @@
 
 <div align="center">
 
-https://github.com/user-attachments/assets/77b4b7dc-0c76-474c-b8ba-0e2a33f31f1f
+<a href="assets/hyperkeep-setup.mp4"><img src="assets/tutorial-cover.jpg" width="300" alt="Watch the HyperKeep setup video"></a>
 
 <sub>A real recording of the first-time setup on HyperOS 4, with taps and narration (68 seconds).<br>
-Turn the sound on for the spoken guide. Can't play it here? <a href="assets/hyperkeep-setup.mp4">Open the video file</a>.</sub>
+Turn the sound on for the spoken guide. <a href="assets/hyperkeep-setup.mp4">Open the video file</a>.</sub>
 
 </div>
 
