@@ -61,8 +61,8 @@
   Autostart, battery, and a Recents lock if it has one).
 - The **⟳** button at the top checks for a new HyperKeep right away; if there is one, it opens the
   update (it shows a download icon with a dot while an update is waiting).
-- The **ⓘ** button (grouped with Settings) opens **About**: HyperKeep's GitHub page and the developer's links (website,
-  LinkedIn, Facebook, WhatsApp).
+- The **ⓘ** button (grouped with Settings) opens **About**: HyperKeep's website and GitHub page, and the developer's
+  profile with links (website, LinkedIn, Facebook, WhatsApp).
 
 ## Settings
 
@@ -71,7 +71,8 @@
 - **What HyperKeep needs**: the status of each permission; tap a row to open its page.
 - **Appearance**: System, Light or Dark.
 - **Updates**: your version, **Check** (or **Update** when a new version is out) and **Check
-  automatically** (once a day while HyperKeep is open; it only asks GitHub for the newest version).
+  automatically** (about once a day, even when HyperKeep is closed, with a notification when a new
+  version is out; it only asks GitHub for the newest version).
 - **Advanced** (for troubleshooting): History, Xiaomi's list (the exact value, add by package
   name, restore backups including the original), Smart/Eco checking, Fix automatically, Reconnect
   Google push, Export/Import, Diagnostics.
@@ -90,8 +91,9 @@
 
 ## Updating HyperKeep
 
-1. When a new version is out, Home shows **Update available** (and Settings → Updates says so).
-   Tap **Update**, read *What's new*, then tap **Install update**. HyperKeep downloads it from its
+1. When a new version is out, you get a notification (**New update available**) and Home shows
+   **Update available** (Settings → Updates says so too). Tap the notification, or
+   tap **Update** on Home, read *What's new*, then tap **Install update**. HyperKeep downloads it from its
    GitHub page and checks it before installing.
 2. Xiaomi's installer takes over. On China ROMs it asks several times: **Continue** → *Couldn't
    find ICP registration info* → **Install** → tick *I understand this app wasn't security-checked*

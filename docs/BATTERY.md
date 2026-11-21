@@ -37,6 +37,10 @@ aggregate that did not reset and includes ~40 minutes of on-screen UI testing; i
 
 The debug build is not representative (58 MB PSS, 33 MB of unminified dex).
 
+The update check is a separate JobScheduler job: periodic (about once a day, 6 h flex), only with
+a network, persisted. Android runs it in a maintenance window alongside other apps' jobs. One HTTPS
+request for `hyperkeep-update.json` (about 1 KB); no service, alarm or wake lock.
+
 ### Event cost and latency (PowerKeeper really rebuilding the list)
 
 | Scenario | Removal → repaired | Engine pass | Follow-up pass caused by HyperKeep's own write |

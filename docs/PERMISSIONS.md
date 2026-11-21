@@ -9,9 +9,9 @@ for the user to flip.
 | **Autostart** (MIUI app-op 10008) | Yes, for background repairs | Without it HyperOS refuses to start HyperKeep's job when its process isn't running (`AutoStartManagerService: Reject service`) | HyperKeep's App info page (one switch) |
 | **Battery saver: No restrictions** for HyperKeep | Strongly recommended | Stops Greezer freezing HyperKeep; puts it in the EXEMPTED standby bucket so its trigger job isn't deferred | HyperKeep's battery page (deep link) |
 | Access list of installed apps (`com.android.permission.GET_INSTALLED_APPS`) | Recommended | China HyperOS can hide other apps from the app list without it | Permission review / permission editor |
-| Internet (`INTERNET`) | For updates | Asks HyperKeep's GitHub release for the newest version (once a day while the app is open, or when you tap Check) and downloads it when you tap Install. Sends nothing about you or your phone; you can turn automatic checks off | Install-time |
+| Internet (`INTERNET`) | For updates | Asks HyperKeep's GitHub release for the newest version (about once a day, in a job Android runs when the phone is online, even if HyperKeep is closed; or when you tap Check) and downloads it when you tap Install. Sends nothing about you or your phone; you can turn automatic checks off | Install-time |
 | Install apps (`REQUEST_INSTALL_PACKAGES`) | For updates | Hands HyperKeep's own update to Android's installer; you confirm every install | Install-time; the installer asks to confirm |
-| Notifications (`POST_NOTIFICATIONS`) | Optional | Alerts when an app couldn't be put back | System notification settings |
+| Notifications (`POST_NOTIFICATIONS`) | Optional | Alerts when an app couldn't be put back, and one notification when a new version is out | System notification settings |
 | `RECEIVE_BOOT_COMPLETED` | Optional | "Start after reboot"; the receiver component is disabled when the option is off | Install-time |
 
 On Android 17, declaring `INTERNET` also adds `ACCESS_LOCAL_NETWORK` (HyperOS: *Connect to nearby

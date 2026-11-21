@@ -109,8 +109,9 @@ a real China ROM phone. It isn't built for Global, EEA or India ROMs.
 4. **Choose your apps** on the home screen, starting with **Google Play services**, then WhatsApp,
    Messenger, your mail app and so on.
 
-**Updates:** HyperKeep checks for a new version once a day while it's open (or tap **⟳**). Tap
-**Update** and confirm in Xiaomi's installer. Your apps, settings and permissions stay.
+**Updates:** about once a day HyperKeep checks for a new version, even when it's closed, and
+shows a notification when one is out (or tap **⟳** on Home). Tap **Update** and confirm in
+Xiaomi's installer. Your apps, settings and permissions stay.
 
 Full walkthrough: [User guide](docs/USER_GUIDE.md).
 
